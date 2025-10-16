@@ -1,11 +1,7 @@
-version: "3.8"
-
 services:
   landing:
     image: nginx:alpine
     container_name: dq_landing
-    expose:
-      - 80
     restart: always
     volumes:
       - ./dist:/usr/share/nginx/html:ro
